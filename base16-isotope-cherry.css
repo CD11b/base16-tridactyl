@@ -4,21 +4,22 @@
     --base02: #606060;
     --base03: #808080;
     --base04: #c0c0c0;
-    --base05: #d0d0d0;
-    --base06: #e0e0e0;
-    --base07: #ffffff;
+    --base05: #da99a6;
+    --base06: #e3b2bc;
+    --base07: #ecccd2;
     --base08: #a30021;
     --base09: #ff9900;
-    --base0A: #ff0099;
-    --base0B: #3cf567;
+    --base0A: #d17fb9;
+    --base0B: #21a300;
     --base0C: #00ffff;
     --base0D: #0066ff;
-    --base0E: #cc00ff;
+    --base0E: #a30073;
     --base0F: #3300ff;
+    --font: monospace
 
     --tridactyl-fg: var(--base05);
     --tridactyl-bg: var(--base00);
-    --tridactyl-url-fg: var(--base0B);
+    --tridactyl-url-fg: var(--base0A);
     --tridactyl-url-bg: var(--base00);
     --tridactyl-highlight-box-bg: var(--base08);
     --tridactyl-highlight-box-fg: var(--base00);
@@ -35,12 +36,14 @@
     --tridactyl-hint-outline: none;
 }
 
-#command-line-holder {    order: 1;
-    border: 2px solid var(--base08);
+#command-line-holder {
+    order: 1;
+    border: 4px solid var(--base08);
     color: var(--tridactyl-bg);
 }
 
-#tridactyl-input {    padding: 1rem;
+#tridactyl-input {
+    padding: 1rem;
     color: var(--tridactyl-fg);
     width: 90%;
     font-size: 1.5rem;
@@ -50,7 +53,8 @@
     padding: 1rem;
 }
 
-#completions table {    font-size: 0.8rem;
+#completions table {
+    font-size: 0.8rem;
     font-weight: 200;
     border-spacing: 0;
     table-layout: fixed;
@@ -59,13 +63,15 @@
     padding-bottom: 1rem;
 }
 
-#completions > div {    max-height: calc(20 * var(--option-height));
+#completions > div {
+    max-height: calc(20 * var(--option-height));
     min-height: calc(10 * var(--option-height));
 }
 
 /* COMPLETIONS */
 
-#completions {    --option-height: 1.4em;
+#completions {
+    --option-height: 1.4em;
     color: var(--tridactyl-fg);
     background: var(--tridactyl-bg);
     display: inline-block;
@@ -78,39 +84,47 @@
 }
 
 /* Olie doesn't know how CSS inheritance works */
-#completions .HistoryCompletionSource {    max-height: unset;
+#completions .HistoryCompletionSource {
+    max-height: unset;
     min-height: unset;
 }
 
-#completions .HistoryCompletionSource table {    width: 100%;
+#completions .HistoryCompletionSource table {
+    width: 100%;
     font-size: 9pt;
     border-spacing: 0;
     table-layout: fixed;
 }
 
 /* redundancy 2: redundancy 2: more redundancy */
-#completions .BmarkCompletionSource {    max-height: unset;
+#completions .BmarkCompletionSource {
+    max-height: unset;
     min-height: unset;
 }
 
-#completions table tr td.prefix,#completions table tr td.privatewindow,#completions table tr td.container,#completions table tr td.icon {    display: none;
+#completions table tr td.prefix,#completions table tr td.privatewindow,#completions table tr td.container,#completions table tr td.icon {
+    display: none;
 }
 
-#completions .BufferCompletionSource table {    width: unset;
+#completions .BufferCompletionSource table {
+    width: unset;
     font-size: unset;
     border-spacing: unset;
     table-layout: unset;
 }
 
-#completions table tr .title {    width: 50%;
+#completions table tr .title {
+    width: 50%;
 }
 
-#completions table tr {    white-space: nowrap;
+#completions table tr {
+    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
-#completions .sectionHeader {    background: unset;
+#completions .sectionHeader {
+    background: unset;
     font-weight: 200;
     border-bottom: unset;
     padding: 1rem !important;
@@ -118,7 +132,8 @@
     padding-bottom: 0.2rem;
 }
 
-#cmdline_iframe {    position: fixed !important;
+#cmdline_iframe {
+    position: fixed !important;
     bottom: unset;
     top: 25% !important;
     left: 10% !important;
@@ -127,27 +142,23 @@
     box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 20px !important;
 }
 
-.TridactylStatusIndicator {    position: fixed !important;
+.TridactylStatusIndicator {
+    position: fixed !important;
     bottom: 0 !important;
     background: var(--tridactyl-bg) !important;
     border: unset !important;
-    border: 1px var(--base08) solid !important;
+    border: 2px var(--base08) solid !important;
     font-size: 12pt !important;
     /*font-weight: 200 !important;*/
     padding: 0.8ex !important;
 }
 
-#completions .focused {    background: var(--base08);
+#completions .focused {
+    background: var(--base08);
     color: var(--base00);
 }
 
-#completions .focused .url {    background: var(--base08);
+#completions .focused .url {
+    background: var(--base08);
     color: var(--base00);
 }
-/* #Ocean-normal { */
-/*  border-color: green !important; */
-/* } */
-
-/* #Ocean-insert { */
-/*  border-color: yellow !important; */
-/* } */
