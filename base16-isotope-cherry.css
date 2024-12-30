@@ -17,11 +17,11 @@
     --base0F: #3300ff;
     --font: monospace
 
-    --tridactyl-fg: var(--base05);
+    --tridactyl-fg: var(--base08);
     --tridactyl-bg: var(--base00);
     --tridactyl-url-fg: var(--base08);
     --tridactyl-url-bg: var(--base00);
-    --tridactyl-highlight-box-bg: var(--base0A);
+    --tridactyl-highlight-box-bg: var(--base08);
     --tridactyl-highlight-box-fg: var(--base00);
 
     /* Hint character tags */
