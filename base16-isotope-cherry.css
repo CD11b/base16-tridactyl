@@ -19,14 +19,14 @@
 
     --tridactyl-fg: var(--base05);
     --tridactyl-bg: var(--base00);
-    --tridactyl-url-fg: var(--base0A);
+    --tridactyl-url-fg: var(--base08);
     --tridactyl-url-bg: var(--base00);
-    --tridactyl-highlight-box-bg: var(--base08);
+    --tridactyl-highlight-box-bg: var(--base0A);
     --tridactyl-highlight-box-fg: var(--base00);
 
     /* Hint character tags */
     --tridactyl-hintspan-fg: var(--base00) !important;
-    --tridactyl-hintspan-bg: var(--base0A) !important;
+    --tridactyl-hintspan-bg: var(--base08) !important;
 
     /* Element Highlights */
     --tridactyl-hint-active-fg: none;
@@ -38,7 +38,7 @@
 
 #command-line-holder {
     order: 1;
-    border: 4px solid var(--base08);
+    border: 2px solid var(--base08);
     color: var(--tridactyl-bg);
 }
 
